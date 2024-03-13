@@ -13,10 +13,12 @@ Predefined config
 Build-In Scripts
 ========================================================================
 
-/bin/backup … make a backup
-/bin/restore … restores a backup
-/bin/cleanup … empties the database
-/bin/rebuild-config … rebuilds the config
+| Script                | What it does                                  |
+| --------------------- | --------------------------------------------- |
+| /bin/backup           | make a backup                                 |
+| /bin/restore          | restores a backup                             |
+| /bin/cleanup          | empties the database                          |
+| /bin/rebuild-config   | rebuilds the config                           |
 
 
 PHP-Testscript
