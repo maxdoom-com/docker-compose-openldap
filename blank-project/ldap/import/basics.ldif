@@ -1,0 +1,38 @@
+dn: dc=localhost
+objectClass: top
+objectClass: domain
+dc: localhost
+
+dn: ou=people,dc=localhost
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=localhost
+objectClass: organizationalUnit
+ou: groups
+
+dn: cn=you,ou=groups,dc=localhost
+gidNumber: 1000
+objectClass: posixGroup
+cn: you
+memberUid: user1000
+
+dn: uid=user1000,ou=people,dc=localhost
+uid: user1000
+uidNumber: 1000
+objectClass: simpleSecurityObject
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: person
+objectClass: inetOrgPerson
+gidNumber: 1000
+givenName: you
+sn: you
+cn: you you
+gecos:
+homeDirectory: /home/you
+loginShell: /bin/bash
+mail: you@localhost
+shadowLastChange: 1710201600
+userPassword: {SSHA}mU/KHC1dwOwibkGPofL5d4y5dw1k1tzR
+

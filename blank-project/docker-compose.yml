@@ -1,0 +1,9 @@
+version: "3"
+services:
+    openldap:
+        build: ../docker-compose-openldap
+        env_file: .env
+        volumes:
+            - ./ldap/config/:/etc/openldap/
+            - ./ldap/data/:/var/lib/openldap/openldap-data/
+            - ./ldap/import/:/var/lib/openldap/import/

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ldapdelete -r -H ldap://localhost -D cn=admin,dc=localhost -w dontaskme dc=localhost

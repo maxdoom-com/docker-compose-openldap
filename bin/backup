@@ -1,0 +1,5 @@
+#!/bin/bash
+
+OUTPUT=backup-`date +'%Y-%m-%d_%H-%M-%S'`.ldif
+ldapsearch -LLL -H ldap://localhost -D cn=admin,dc=localhost -w dontaskme -b dc=localhost > $OUTPUT
+echo wrote backup to $OUTPUT

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm -rf '/etc/openldap/cn=config.ldif' '/etc/openldap/cn=config/'
+su you -c 'slapadd -n 0 -F /etc/openldap/ -l /etc/openldap/slapd.ldif'
